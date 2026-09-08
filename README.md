@@ -10,10 +10,6 @@ Plain HTML/CSS/JS, no build step. Three files:
 
 Just opening `index.html` in a browser works for most of the site. For the GitHub API calls to run reliably (some browsers restrict `fetch` on `file://` pages), serve it over a local server instead:
 
-```bash
-# from inside this folder
-python3 -m http.server 8000
-```
 
 Then open http://localhost:8000 in your browser.
 

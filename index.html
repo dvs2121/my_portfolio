@@ -1,385 +1,1401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devesh Pratap — AI & ML Engineer / Power BI Developer</title>
-<meta name="description" content="Devesh Pratap — B.Tech CSE (AI & ML) student. Machine Learning Engineer, Power BI Developer, Cloud Computing Engineer, Data Analyst.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Devesh Pratap — AI & ML Engineer | Data Analyst</title>
+
+  <meta
+    name="description"
+    content="Devesh Pratap — B.Tech CSE (AI & ML) student, Machine Learning Engineer, Power BI Developer, Data Analyst and Cloud Computing enthusiast."
+  >
+
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="loader">
-  <div class="loader-bar"><span></span></div>
-  <div class="loader-txt">booting portfolio.exe …</div>
+<!-- ================= LOADER ================= -->
+<div id="loader" aria-label="Loading portfolio">
+  <div class="loader-bar">
+    <span></span>
+  </div>
+  <div class="loader-txt">Loading Portfolio …</div>
 </div>
+
 <div id="progress"></div>
 
-<nav>
+
+<!-- ================= NAVIGATION ================= -->
+<nav aria-label="Main navigation">
   <div class="navwrap">
-    <a href="#home" class="logo"><span class="dot"></span>devesh.pratap</a>
+
+    <a href="#home" class="logo" aria-label="Devesh Pratap home">
+      <span class="dot"></span>
+      Devesh.Pratap
+    </a>
+
     <div class="navlinks" id="navlinks">
+
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#dashboards">Dashboards</a>
       <a href="#ml">ML</a>
       <a href="#cloud">Cloud</a>
+      <a href="#data-analysis">Data Analysis</a>
+      <a href="#certificates">Certificates</a>
       <a href="#resume">Resume</a>
       <a href="#contact">Contact</a>
+
     </div>
+
     <div class="navctas">
-      <button class="icon-btn" id="themeToggle" title="Toggle theme">🌙</button>
-      <button class="icon-btn hamburger" id="hamburger" title="Menu">☰</button>
+
+      <button
+        class="icon-btn"
+        id="themeToggle"
+        type="button"
+        title="Toggle theme"
+        aria-label="Toggle dark and light theme"
+      >
+        🌙
+      </button>
+
+      <button
+        class="icon-btn hamburger"
+        id="hamburger"
+        type="button"
+        title="Open menu"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navlinks"
+      >
+        ☰
+      </button>
+
     </div>
+
   </div>
 </nav>
 
-<!-- HERO -->
+
+<!-- ================= HERO ================= -->
 <section id="home" class="hero container">
+
   <div>
-    <div class="hero-kicker"><span class="status-dot"></span>AVAILABLE FOR OPPORTUNITIES</div>
-    <h1>Hi, I'm <span class="grad">Devesh Pratap</span> — building intelligence into data.</h1>
-    <div class="type-line mono"><span id="typed"></span><span class="cursor">&nbsp;</span></div>
-    <p class="desc">B.Tech Computer Science (AI & Machine Learning) student who turns raw data into decisions — with Python, Machine Learning models, Power BI dashboards, SQL, and cloud platforms.</p>
-    <div class="hero-actions">
-      <a href="#resume" class="btn btn-primary">Download Resume</a>
-      <a href="#projects" class="btn btn-ghost">View Projects</a>
-      <a href="#contact" class="btn btn-ghost">Hire Me</a>
+
+    <div class="hero-kicker">
+      <span class="status-dot"></span>
+      AVAILABLE FOR OPPORTUNITIES
     </div>
+
+    <h1>
+      Hi, I'm
+      <span class="grad">Devesh Pratap</span>
+      — building intelligence into data.
+    </h1>
+
+    <div class="type-line mono">
+      <span id="typed"></span>
+      <span class="cursor">&nbsp;</span>
+    </div>
+
+    <p class="desc">
+      B.Tech Computer Science (AI & Machine Learning) student who turns
+      raw data into decisions using Python, Machine Learning, Power BI,
+      SQL and cloud technologies.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="#resume" class="btn btn-primary">
+        Download Resume
+      </a>
+
+      <a href="#projects" class="btn btn-ghost">
+        View Projects
+      </a>
+
+      <!-- GOOGLE DRIVE CERTIFICATES -->
+      <a
+        href="https://drive.google.com/drive/folders/162flDRNx4uubC853h2FjRnv_NVHpYInu?usp=drive_link"
+        class="btn btn-ghost"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📜 View Certificates
+      </a>
+
+      <a href="#contact" class="btn btn-ghost">
+        Hire Me
+      </a>
+
+    </div>
+
   </div>
+
+
+  <!-- TERMINAL -->
   <div class="terminal reveal">
+
     <div class="term-head">
+
       <span class="term-dot" style="background:#ff5f56"></span>
       <span class="term-dot" style="background:#ffbd2e"></span>
       <span class="term-dot" style="background:#27c93f"></span>
-      <span class="mono" style="font-size:12px;color:var(--text-muted);margin-left:8px;">devesh@github ~ %</span>
+
+      <span
+        class="mono"
+        style="font-size:12px;color:var(--text-muted);margin-left:8px;"
+      >
+        devesh@github ~ %
+      </span>
+
     </div>
+
     <div class="term-body">
-      <div><span class="k">$</span> whoami</div>
-      <div class="v">devesh-pratap · CSE (AI & ML) · SRIMT, AKTU Lucknow</div>
-      <div style="margin-top:10px;"><span class="k">$</span> cat stack.txt</div>
-      <div class="v">Python · Power BI · SQL · Scikit-learn · AWS/Azure/GCP</div>
-      <div style="margin-top:10px;"><span class="k">$</span> git remote -v</div>
-      <div class="v">origin  https://github.com/dvs2121 (fetch)</div>
-    </div>
-    <div class="term-stats mono">
-      <div><div class="num" id="stat-repos">–</div><div class="lbl">Repos</div></div>
-      <div><div class="num" id="stat-followers">–</div><div class="lbl">Followers</div></div>
-      <div><div class="num" id="stat-stars">–</div><div class="lbl">Stars</div></div>
-    </div>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about" class="container">
-  <div class="eyebrow">About</div>
-  <h2 class="section-title reveal">The short version</h2>
-  <div class="about-grid">
-    <div class="reveal">
-      <p style="color:var(--text-muted); font-size:16px; line-height:1.85;">
-        I'm a Computer Science Engineering student specializing in <strong style="color:var(--text)">Artificial Intelligence & Machine Learning</strong>, currently pursuing my B.Tech at SRIMT, Lucknow (affiliated to AKTU). I enjoy the full loop of a data problem: cleaning it, modeling it with ML, and shipping the answer as a Power BI dashboard or a deployed application someone can actually act on.
-      </p>
-      <p style="color:var(--text-muted); font-size:16px; line-height:1.85; margin-top:16px;">
-        My focus areas are Business Intelligence, Python-based Machine Learning, and Cloud infrastructure — I'm especially interested in building scalable AI-powered applications and BI solutions using Microsoft Power BI, Python, SQL, and cloud platforms like AWS and Azure.
-      </p>
-      <div class="chiplist">
-        <span class="chip">AI & ML</span><span class="chip">Power BI</span><span class="chip">Cloud Computing</span>
-        <span class="chip">Data Analytics</span><span class="chip">SQL</span><span class="chip">Python</span>
-        <span class="chip">Data Visualization</span><span class="chip">Business Intelligence</span>
-      </div>
-    </div>
-    <div class="grid grid-2 reveal">
-      <div class="card"><div style="font-size:26px;">🧠</div><h4 style="margin:14px 0 6px;font-size:15.5px;">Machine Learning</h4><p style="color:var(--text-muted);font-size:13.5px;">Classification, regression & NLP models with Scikit-learn and TensorFlow.</p></div>
-      <div class="card"><div style="font-size:26px;">📊</div><h4 style="margin:14px 0 6px;font-size:15.5px;">Power BI</h4><p style="color:var(--text-muted);font-size:13.5px;">DAX, Power Query and dashboards that turn spreadsheets into decisions.</p></div>
-      <div class="card"><div style="font-size:26px;">☁️</div><h4 style="margin:14px 0 6px;font-size:15.5px;">Cloud</h4><p style="color:var(--text-muted);font-size:13.5px;">AWS, Azure & GCP fundamentals, Docker, and CI/CD basics.</p></div>
-      <div class="card"><div style="font-size:26px;">🐍</div><h4 style="margin:14px 0 6px;font-size:15.5px;">Python</h4><p style="color:var(--text-muted);font-size:13.5px;">Pandas, NumPy & Flask/FastAPI for data pipelines and small APIs.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="container">
-  <div class="eyebrow">Education</div>
-  <h2 class="section-title reveal">Academic background</h2>
-  <div class="edu-card reveal">
-    <div class="edu-top">
       <div>
-        <h3 style="font-size:20px;margin-bottom:6px;">Bachelor of Technology — Computer Science & Engineering</h3>
-        <p style="color:var(--text-muted);font-size:14.5px;">Specialization in Artificial Intelligence & Machine Learning</p>
-        <p style="color:var(--text-muted);font-size:14px;margin-top:6px;">SRIMT, Lucknow · Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU)</p>
+        <span class="k">$</span>
+        whoami
       </div>
-      <span class="edu-badge mono">2023 — Present</span>
+
+      <div class="v">
+        Devesh-Pratap · CSE (AI & ML) · SRIMT, AKTU Lucknow
+      </div>
+
+      <div style="margin-top:10px;">
+        <span class="k">$</span>
+        cat stack.txt
+      </div>
+
+      <div class="v">
+        Python · Power BI · SQL · Scikit-learn · AWS/Azure/GCP
+      </div>
+
+      <div style="margin-top:10px;">
+        <span class="k">$</span>
+        git remote -v
+      </div>
+
+      <div class="v">
+        origin https://github.com/dvs2121
+      </div>
+
     </div>
-    <!-- <p class="mono" style="font-size:13px;color:var(--text-muted);">CGPA: <span style="color:var(--text)">— / 10 (add your CGPA)</span></p> -->
-    <div class="coursework">
-      <span class="chip">AI & ML</span><span class="chip">Data Science</span><span class="chip">Machine Learning</span>
-      <span class="chip">Cloud Computing</span><span class="chip">Database Management</span><span class="chip">Operating Systems</span>
-      <span class="chip">Computer Networks</span><span class="chip">Data Structures</span><span class="chip">Software Engineering</span>
-      <span class="chip">Statistics</span><span class="chip">Python Programming</span>
+
+    <div class="term-stats mono">
+
+      <div>
+        <div class="num" id="stat-repos">–</div>
+        <div class="lbl">Repos</div>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="container">
-  <div class="eyebrow">Skills</div>
-  <h2 class="section-title reveal">Tools I reach for</h2>
-  <p class="section-sub reveal">Proficiency is self-rated — hover to see it animate in.</p>
-  <div class="grid grid-2">
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="container">
+
+  <div class="eyebrow">About</div>
+
+  <h2 class="section-title reveal">
+    The short version
+  </h2>
+
+  <div class="about-grid">
+
     <div class="reveal">
+
+      <p style="color:var(--text-muted);font-size:16px;line-height:1.85;">
+
+        I'm a Computer Science Engineering student specializing in
+        <strong style="color:var(--text)">
+          Artificial Intelligence & Machine Learning
+        </strong>,
+        currently pursuing my B.Tech at SRIMT, Lucknow
+        affiliated with AKTU.
+
+        I enjoy the complete data workflow — cleaning data,
+        building ML models and delivering insights through
+        Power BI dashboards or deployed applications.
+
+      </p>
+
+      <p style="color:var(--text-muted);font-size:16px;line-height:1.85;margin-top:16px;">
+
+        My focus areas include Business Intelligence,
+        Python-based Machine Learning, Data Analytics and
+        Cloud Computing.
+
+      </p>
+
+      <div class="chiplist">
+
+        <span class="chip">AI & ML</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Cloud Computing</span>
+        <span class="chip">Data Analytics</span>
+        <span class="chip">SQL</span>
+        <span class="chip">Python</span>
+        <span class="chip">Data Visualization</span>
+        <span class="chip">Business Intelligence</span>
+
+      </div>
+
+    </div>
+
+
+    <div class="grid grid-2 reveal">
+
+      <div class="card">
+        <div style="font-size:26px;">🧠</div>
+        <h4 style="margin:14px 0 6px;font-size:15.5px;">
+          Machine Learning
+        </h4>
+        <p style="color:var(--text-muted);font-size:13.5px;">
+          Classification, regression and NLP models using
+          Scikit-learn and TensorFlow.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:26px;">📊</div>
+        <h4 style="margin:14px 0 6px;font-size:15.5px;">
+          Power BI
+        </h4>
+        <p style="color:var(--text-muted);font-size:13.5px;">
+          DAX, Power Query and interactive dashboards.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:26px;">☁️</div>
+        <h4 style="margin:14px 0 6px;font-size:15.5px;">
+          Cloud
+        </h4>
+        <p style="color:var(--text-muted);font-size:13.5px;">
+          AWS, Azure, GCP, Docker and CI/CD fundamentals.
+        </p>
+      </div>
+
+      <div class="card">
+        <div style="font-size:26px;">🐍</div>
+        <h4 style="margin:14px 0 6px;font-size:15.5px;">
+          Python
+        </h4>
+        <p style="color:var(--text-muted);font-size:13.5px;">
+          Pandas, NumPy, Flask and FastAPI.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="container">
+
+  <div class="eyebrow">Education</div>
+
+  <h2 class="section-title reveal">
+    Academic background
+  </h2>
+
+  <div class="edu-card reveal">
+
+    <div class="edu-top">
+
+      <div>
+
+        <h3 style="font-size:20px;margin-bottom:6px;">
+          Bachelor of Technology — Computer Science & Engineering
+        </h3>
+
+        <p style="color:var(--text-muted);font-size:14.5px;">
+          Specialization in Artificial Intelligence & Machine Learning
+        </p>
+
+        <p style="color:var(--text-muted);font-size:14px;margin-top:6px;">
+          SRIMT, Lucknow · Affiliated to Dr. A.P.J. Abdul Kalam
+          Technical University (AKTU)
+        </p>
+
+      </div>
+
+      <span class="edu-badge mono">
+        2023 — Present
+      </span>
+
+    </div>
+
+    <div class="coursework">
+
+      <span class="chip">AI & ML</span>
+      <span class="chip">Data Science</span>
+      <span class="chip">Machine Learning</span>
+      <span class="chip">Cloud Computing</span>
+      <span class="chip">Database Management</span>
+      <span class="chip">Operating Systems</span>
+      <span class="chip">Computer Networks</span>
+      <span class="chip">Data Structures</span>
+      <span class="chip">Software Engineering</span>
+      <span class="chip">Statistics</span>
+      <span class="chip">Python Programming</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="container">
+
+  <div class="eyebrow">Skills</div>
+
+  <h2 class="section-title reveal">
+    Tools I reach for
+  </h2>
+
+  <p class="section-sub reveal">
+    Proficiency is self-rated.
+  </p>
+
+  <div class="grid grid-2">
+
+    <div class="reveal">
+
       <div class="skill-cat">
+
         <h4>Programming</h4>
+
         <div class="skillbar" data-name="Python" data-pct="90"></div>
         <div class="skillbar" data-name="SQL" data-pct="85"></div>
         <div class="skillbar" data-name="Java" data-pct="65"></div>
         <div class="skillbar" data-name="JavaScript" data-pct="60"></div>
         <div class="skillbar" data-name="HTML / CSS" data-pct="75"></div>
+
       </div>
+
+
       <div class="skill-cat">
+
         <h4>Power BI</h4>
+
         <div class="skillbar" data-name="DAX" data-pct="82"></div>
         <div class="skillbar" data-name="Power Query" data-pct="80"></div>
         <div class="skillbar" data-name="Power BI Service" data-pct="78"></div>
         <div class="skillbar" data-name="Excel" data-pct="85"></div>
+
       </div>
+
     </div>
+
+
     <div class="reveal">
+
       <div class="skill-cat">
+
         <h4>Machine Learning</h4>
+
         <div class="skillbar" data-name="Scikit-learn" data-pct="83"></div>
         <div class="skillbar" data-name="Pandas / NumPy" data-pct="88"></div>
         <div class="skillbar" data-name="Matplotlib" data-pct="78"></div>
         <div class="skillbar" data-name="TensorFlow" data-pct="65"></div>
+
       </div>
+
+
       <div class="skill-cat">
+
         <h4>Cloud & Databases</h4>
+
         <div class="skillbar" data-name="AWS" data-pct="70"></div>
         <div class="skillbar" data-name="Azure" data-pct="68"></div>
         <div class="skillbar" data-name="MySQL / MongoDB" data-pct="80"></div>
         <div class="skillbar" data-name="Git / GitHub" data-pct="85"></div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="container">
-  <div class="eyebrow">Certifications</div>
-  <h2 class="section-title reveal">Credentials</h2>
-  <!-- <p class="section-sub reveal">Placeholders — swap in your certificate links and issue dates anytime.</p> -->
+
+<!-- ================= CERTIFICATES ================= -->
+<section id="certificates" class="container">
+
+  <div class="eyebrow">
+    Certifications
+  </div>
+
+  <h2 class="section-title reveal">
+    Credentials
+  </h2>
+
+  <p class="section-sub reveal">
+    View and verify my certificates from Google Drive.
+  </p>
+
+
   <div class="grid grid-4">
-    <div class="card cert-card reveal"><span class="tag mono">VERIFIED</span><div class="cert-icon">📊</div><h4 style="font-size:15px;margin-bottom:6px;">Power BI Certification</h4><p style="font-size:13px;color:var(--text-muted);">Data modeling, DAX & dashboard design.</p></div>
-    <div class="card cert-card reveal"><span class="tag mono">VERIFIED</span><div class="cert-icon">🐍</div><h4 style="font-size:15px;margin-bottom:6px;">Python Programming</h4><p style="font-size:13px;color:var(--text-muted);">Core Python & data structures.</p></div>
-    <div class="card cert-card reveal"><span class="tag mono">PLACEHOLDER</span><div class="cert-icon">🧠</div><h4 style="font-size:15px;margin-bottom:6px;">Machine Learning</h4><p style="font-size:13px;color:var(--text-muted);">Add issuer & credential link.</p></div>
-    <div class="card cert-card reveal"><span class="tag mono">PLACEHOLDER</span><div class="cert-icon">☁️</div><h4 style="font-size:15px;margin-bottom:6px;">Cloud Computing</h4><p style="font-size:13px;color:var(--text-muted);">Add issuer & credential link.</p></div>
+
+    <div class="card cert-card reveal">
+
+      <span class="tag mono">
+        VERIFIED
+      </span>
+
+      <div class="cert-icon">
+        📊
+      </div>
+
+      <h4 style="font-size:15px;margin-bottom:6px;">
+        Power BI Course Certificate
+      </h4>
+
+      <p style="font-size:13px;color:var(--text-muted);">
+        Data modeling, DAX and dashboard design.
+      </p>
+
+    </div>
+
+
+    <div class="card cert-card reveal">
+
+      <span class="tag mono">
+        VERIFIED
+      </span>
+
+      <div class="cert-icon">
+        🐍
+      </div>
+
+      <h4 style="font-size:15px;margin-bottom:6px;">
+        Python Programming Course
+      </h4>
+
+      <p style="font-size:13px;color:var(--text-muted);">
+        Core Python and data structures.
+      </p>
+
+    </div>
+
+
+    <div class="card cert-card reveal">
+
+      <span class="tag mono">
+        VERIFIED
+      </span>
+
+      <div class="cert-icon">
+        🧠
+      </div>
+
+      <h4 style="font-size:15px;margin-bottom:6px;">
+        Machine Learning
+      </h4>
+
+      <p style="font-size:13px;color:var(--text-muted);">
+        Machine Learning and data science credentials.
+      </p>
+
+    </div>
+
+
+    <div class="card cert-card reveal">
+
+      <span class="tag mono">
+        VERIFIED
+      </span>
+
+      <div class="cert-icon">
+        ☁️
+      </div>
+
+      <h4 style="font-size:15px;margin-bottom:6px;">
+        Cloud Computing
+      </h4>
+
+      <p style="font-size:13px;color:var(--text-muted);">
+        Cloud Computing, Security and Blockchain.
+      </p>
+
+    </div>
+
   </div>
+
+
+  <!-- GOOGLE DRIVE CTA -->
+
+  <div
+    class="card reveal"
+    style="
+      margin-top:24px;
+      text-align:center;
+      padding:30px 20px;
+    "
+  >
+
+    <div style="font-size:36px;margin-bottom:10px;">
+      📁
+    </div>
+
+    <h3 style="margin-bottom:8px;">
+      View All Certificates
+    </h3>
+
+    <p
+      style="
+        color:var(--text-muted);
+        font-size:14px;
+        margin-bottom:18px;
+      "
+    >
+      Browse my complete certificate collection on Google Drive.
+    </p>
+
+    <a
+      href="https://drive.google.com/drive/folders/162flDRNx4uubC853h2FjRnv_NVHpYInu?usp=drive_link"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-primary"
+      aria-label="View all certificates on Google Drive"
+    >
+      📜 View Certificates on Google Drive
+    </a>
+
+  </div>
+
 </section>
 
-<!-- PROJECTS -->
+
+<!-- ================= PROJECTS ================= -->
 <section id="projects" class="container">
-  <div class="eyebrow">Projects</div>
-  <h2 class="section-title reveal">Live from GitHub</h2>
-  <p class="section-sub reveal">Pulled in real time from <a href="https://github.com/dvs2121" target="_blank" style="color:var(--accent);">github.com/dvs2121</a> — descriptions, languages and stars, straight from the source.</p>
-  <div id="projects-status" class="reveal">fetching repositories…</div>
-  <div class="filter-row reveal" id="filterRow" style="display:none;">
-    <button class="filter-btn active" data-filter="all">All</button>
+
+  <div class="eyebrow">
+    Projects
   </div>
-  <div class="grid grid-3" id="projectsGrid"></div>
+
+  <h2 class="section-title reveal">
+    Live from GitHub
+  </h2>
+
+  <p class="section-sub reveal">
+
+    Pulled in real time from
+
+    <a
+      href="https://github.com/dvs2121"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="color:var(--accent);"
+    >
+      github.com/dvs2121
+    </a>
+
+  </p>
+
+  <div id="projects-status" class="reveal">
+    Fetching repositories…
+  </div>
+
+  <div
+    class="filter-row reveal"
+    id="filterRow"
+    style="display:none;"
+  >
+    <button
+      class="filter-btn active"
+      data-filter="all"
+      type="button"
+    >
+      All
+    </button>
+  </div>
+
+  <div
+    class="grid grid-3"
+    id="projectsGrid"
+  ></div>
+
 </section>
 
-<!-- DASHBOARDS -->
+
+<!-- ================= DASHBOARDS ================= -->
 <section id="dashboards" class="container">
-  <div class="eyebrow">Power BI Showcase</div>
-  <h2 class="section-title reveal">Dashboard gallery</h2>
-  <p class="section-sub reveal">Placeholder gallery — click any card for a full-screen preview slot. Swap in real screenshots and links.</p>
-  <div class="grid grid-3" id="dashGrid"></div>
+
+  <div class="eyebrow">
+    Power BI Showcase
+  </div>
+
+  <h2 class="section-title reveal">
+    Dashboard gallery
+  </h2>
+
+  <p class="section-sub reveal">
+    Explore Power BI projects and business intelligence dashboards.
+  </p>
+
+  <div
+    class="grid grid-3"
+    id="dashGrid"
+  ></div>
+
 </section>
-<div class="modal-overlay" id="modalOverlay">
+
+
+<!-- MODAL -->
+<div
+  class="modal-overlay"
+  id="modalOverlay"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="modalTitle"
+>
   <div class="modal-box">
-    <div class="modal-close" id="modalClose">✕</div>
-    <h3 id="modalTitle" style="margin-bottom:10px;"></h3>
-    <p id="modalDesc" style="color:var(--text-muted); font-size:14.5px; line-height:1.7;"></p>
+
+    <button
+      class="modal-close"
+      id="modalClose"
+      type="button"
+      aria-label="Close modal"
+    >
+      ✕
+    </button>
+
+    <h3 id="modalTitle"></h3>
+
+    <p
+      id="modalDesc"
+      style="color:var(--text-muted);font-size:14.5px;line-height:1.7;"
+    ></p>
+
   </div>
 </div>
 
-<!-- ML SHOWCASE -->
+
+<!-- ================= ML ================= -->
 <section id="ml" class="container">
-  <div class="eyebrow">Machine Learning</div>
-  <h2 class="section-title reveal">Model showcase</h2>
-  <div class="grid grid-3" id="mlGrid"></div>
-</section>
 
-<!-- CLOUD -->
-<section id="cloud" class="container">
-  <div class="eyebrow">Cloud Computing</div>
-  <!-- <h2 class="section-title reveal">Infrastructure & deployment</h2> -->
-  <div class="grid grid-2" id="cloudGrid"></div>
-</section>
-
-<!-- ACHIEVEMENTS + GITHUB STATS -->
-<section id="stats" class="container">
-  <div class="eyebrow">GitHub Statistics</div>
-  <h2 class="section-title reveal">Activity, live</h2>
-  <!-- <div class="gh-stats-grid reveal">
-    <div class="gh-img-card"><img loading="lazy" src="https://github-readme-stats.vercel.app/api?username=dvs2121&show_icons=true&theme=transparent&hide_border=true&title_color=4f7cff&icon_color=22d3b0&text_color=8a94a6" alt="GitHub stats for dvs2121"></div>
-    <div class="gh-img-card"><img loading="lazy" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dvs2121&layout=compact&theme=transparent&hide_border=true&title_color=4f7cff&text_color=8a94a6" alt="Top languages for dvs2121"></div>
-  </div> -->
-  <div class="gh-img-card reveal" style="margin-top:20px;"><img loading="lazy" src="https://ghchart.rshah.org/4f7cff/dvs2121" alt="GitHub contribution chart for dvs2121" style="width:100%;"></div>
-  <div class="counter-row reveal">
-    <div class="counter-card"><div class="cnum" data-count="0" id="c1">0</div><div class="clbl">Projects Completed</div></div>
-    <div class="counter-card"><div class="cnum" data-count="0" id="c2">0</div><div class="clbl">Certifications</div></div>
-    <div class="counter-card"><div class="cnum" data-count="12" id="c3">0</div><div class="clbl">Technologies</div></div>
-    <div class="counter-card"><div class="cnum" data-count="0" id="c4">0</div><div class="clbl">GitHub Stars</div></div>
+  <div class="eyebrow">
+    Machine Learning
   </div>
+
+  <h2 class="section-title reveal">
+    Model showcase
+  </h2>
+
+  <div
+    class="grid grid-3"
+    id="mlGrid"
+  ></div>
+
 </section>
 
-<!-- RESUME -->
-<section id="resume" class="container">
-  <div class="eyebrow">Resume</div>
-  <!--<h2 class="section-title reveal">ATS-friendly resume</h2>-->
-  <p class="section-sub reveal" style="margin-left:auto;margin-right:auto;text-align:center;">Generated straight from this page's content. Print it or save as PDF.</p>
-  <div class="resume-box reveal">
-    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;">
-      <div>
-        <h2 style="font-size:24px;">Devesh Pratap</h2>
-        <p class="mono" style="font-size:13px;color:var(--text-muted);">Machine Learning Engineer · Power BI Developer · Cloud Computing Engineer</p>
-      </div>
-      <p class="mono" style="font-size:12.5px;color:var(--text-muted);text-align:right;">
-        7348247757<br>prd247757@gmail.com<br>github.com/dvs2121<br>Lucknow, UP, India
+
+<!-- ================= CLOUD ================= -->
+<section id="cloud" class="container">
+
+  <div class="eyebrow">
+    Cloud Computing
+  </div>
+
+  <h2 class="section-title reveal">
+    Infrastructure & Deployment
+  </h2>
+
+  <div
+    class="grid grid-2"
+    id="cloudGrid"
+  ></div>
+
+</section>
+
+
+<!-- ================= DATA ANALYSIS ================= -->
+<section id="data-analysis" class="container">
+
+  <div class="eyebrow">
+    Data Analysis
+  </div>
+
+  <h2 class="section-title reveal">
+    Turning data into insights
+  </h2>
+
+  <p class="section-sub reveal">
+    Data cleaning, exploratory analysis, visualization,
+    business intelligence and analytical reporting using
+    Python, SQL, Excel and Power BI.
+  </p>
+
+  <div class="grid grid-3">
+
+    <div class="card reveal">
+      <div style="font-size:28px;">🐼</div>
+      <h4 style="margin-top:12px;">
+        Python Analytics
+      </h4>
+      <p style="color:var(--text-muted);font-size:13.5px;">
+        Pandas, NumPy, Matplotlib and exploratory data analysis.
       </p>
     </div>
+
+    <div class="card reveal">
+      <div style="font-size:28px;">🗄️</div>
+      <h4 style="margin-top:12px;">
+        SQL
+      </h4>
+      <p style="color:var(--text-muted);font-size:13.5px;">
+        Data extraction, transformation, joins,
+        aggregation and analytical queries.
+      </p>
+    </div>
+
+    <div class="card reveal">
+      <div style="font-size:28px;">📊</div>
+      <h4 style="margin-top:12px;">
+        Business Intelligence
+      </h4>
+      <p style="color:var(--text-muted);font-size:13.5px;">
+        Interactive Power BI dashboards,
+        DAX measures and business reporting.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= GITHUB STATS ================= -->
+<section id="stats" class="container">
+
+  <div class="eyebrow">
+    GitHub Statistics
+  </div>
+
+  <h2 class="section-title reveal">
+    Activity, live
+  </h2>
+
+  <div
+    class="gh-img-card reveal"
+    style="margin-top:20px;"
+  >
+
+    <img
+      loading="lazy"
+      src="https://ghchart.rshah.org/4f7cff/dvs2121"
+      alt="GitHub contribution chart for Devesh Pratap"
+      style="width:100%;"
+    >
+
+  </div>
+
+
+  <div class="counter-row reveal">
+
+    <div class="counter-card">
+      <div class="cnum" data-count="0" id="c1">0</div>
+      <div class="clbl">Projects Completed</div>
+    </div>
+
+    <div class="counter-card">
+      <div class="cnum" data-count="0" id="c2">0</div>
+      <div class="clbl">Certifications</div>
+    </div>
+
+    <div class="counter-card">
+      <div class="cnum" data-count="12" id="c3">0</div>
+      <div class="clbl">Technologies</div>
+    </div>
+
+    <div class="counter-card">
+      <div class="cnum" data-count="0" id="c4">0</div>
+      <div class="clbl">GitHub Stars</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= RESUME ================= -->
+<section id="resume" class="container">
+
+  <div class="eyebrow">
+    Resume
+  </div>
+
+  <p
+    class="section-sub reveal"
+    style="margin-left:auto;margin-right:auto;text-align:center;"
+  >
+    ATS-friendly resume generated from this portfolio.
+  </p>
+
+  <div class="resume-box reveal">
+
+    <div
+      style="
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        gap:10px;
+      "
+    >
+
+      <div>
+
+        <h2 style="font-size:24px;">
+          Devesh Pratap
+        </h2>
+
+        <p
+          class="mono"
+          style="font-size:13px;color:var(--text-muted);"
+        >
+          Machine Learning Engineer · Data Analyst/PowerBi Engineer ·
+          Cloud Computing Engineer
+        </p>
+
+      </div>
+
+      <p
+        class="mono"
+        style="
+          font-size:12.5px;
+          color:var(--text-muted);
+          text-align:right;
+        "
+      >
+        7348247757<br>
+        deveshpratap7757@gmail.com<br>
+        github.com/dvs2121<br>
+        Lucknow, UP, India
+      </p>
+
+    </div>
+
+
     <h3>Summary</h3>
-    <p style="font-size:14.5px;color:var(--text-muted);line-height:1.75;">B.Tech CSE (AI & ML) student building intelligent applications with Python, Machine Learning, Power BI and Cloud technologies. Strong foundation in data analytics, SQL, and business intelligence.</p>
+
+    <p
+      style="
+        font-size:14.5px;
+        color:var(--text-muted);
+        line-height:1.75;
+      "
+    >
+      B.Tech CSE (AI & ML) student building intelligent
+      applications with Python, Machine Learning, Power BI
+      and Cloud technologies. Strong foundation in data
+      analytics, SQL and business intelligence.
+    </p>
+
+
     <h3>Education</h3>
-    <ul><li>B.Tech, Computer Science & Engineering (AI & ML) — SRIMT, Lucknow (AKTU), 2023–Present</li></ul>
-    <h3>Technical Skills</h3>
+
     <ul>
-      <li>Programming: Python, SQL, Java, HTML/CSS/JavaScript</li>
-      <li>BI & Data: Power BI, DAX, Power Query, Excel</li>
-      <li>Machine Learning: Scikit-learn, Pandas, NumPy, Matplotlib, TensorFlow</li>
-      <li>Cloud & Tools: AWS, Azure, GCP, Docker, Git/GitHub, VS Code, Jupyter</li>
+      <li>
+        B.Tech, Computer Science & Engineering
+        (AI & ML) — SRIMT, Lucknow (AKTU),
+        2023–Present
+      </li>
     </ul>
+
+
+    <h3>Technical Skills</h3>
+
+    <ul>
+
+      <li>
+        Programming: Python, SQL, Java,
+        HTML/CSS/JavaScript
+      </li>
+
+      <li>
+        BI & Data: Power BI, DAX,
+        Power Query, Excel
+      </li>
+
+      <li>
+        Machine Learning: Scikit-learn,
+        Pandas, NumPy, Matplotlib, TensorFlow
+      </li>
+
+      <li>
+        Cloud & Tools: AWS, Azure, GCP,
+        Docker, Git/GitHub, VS Code, Jupyter
+      </li>
+
+    </ul>
+
+
     <h3>Certifications</h3>
-    <ul><li>Power BI Certification</li><li>Python Programming Certification</li></ul>
+
+    <ul>
+
+      <li>Power BI Certification</li>
+      <li>Python Programming Certification</li>
+      <li>Cloud Computing & Security & Blockchain Certification</li>
+
+    </ul>
+
+
     <h3>Projects</h3>
-    <ul><li>See live project list at github.com/dvs2121 — auto-synced project section above.</li></ul>
+
+    <ul>
+
+      <li>
+        Live project portfolio:
+        github.com/dvs2121
+      </li>
+
+    </ul>
+
+
     <div class="resume-actions">
-      <button class="btn btn-primary" onclick="window.print()">🖨️ Print / Save as PDF</button>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        onclick="window.print()"
+      >
+        🖨️ Print / Save as PDF
+      </button>
+
+      <a
+        href="https://drive.google.com/drive/folders/162flDRNx4uubC853h2FjRnv_NVHpYInu?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-ghost"
+      >
+        📜 Certificates
+      </a>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- CONTACT -->
-  <section id="contact" class="container">
-  <div class="eyebrow">Contact</div>
-  <h2 class="section-title reveal">Let's build something</h2>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="container">
+
+  <div class="eyebrow">
+    Contact
+  </div>
+
+  <h2 class="section-title reveal">
+    Let's build something
+  </h2>
+
   <div class="contact-grid">
+
+
+    <!-- PHONE -->
     <div class="contact-info-item">
-    <div class="contact-icon">📞</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">Phone</div>
-        <div>
-            <a href="tel:+917348247757">7348247757</a>
-        </div>
-    </div>
-  </div>
 
-  <div class="contact-info-item">
-    <div class="contact-icon">✉️</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">Email</div>
-        <div>
-            <a href="mailto:prd247757@gmail.com">prd247757@gmail.com</a>
-        </div>
-    </div>
-  </div>
+      <div class="contact-icon">
+        📞
+      </div>
 
-  <div class="contact-info-item">
-    <div class="contact-icon">💬</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">LinkedIn</div>
-        <div>
-            <a href="https://www.linkedin.com/in/devesh-prajapati-8b906b25a"
-               target="_blank"
-               rel="noopener noreferrer">
-               linkedin.com/in/devesh-prajapati-8b906b25a
-            </a>
-        </div>
-    </div>
-  </div>
+      <div>
 
-  <div class="contact-info-item">
-    <div class="contact-icon">💬</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">Instagram</div>
-        <div>
-            <a href="https://www.instagram.com/devesh.prajapati_2128"
-               target="_blank"
-               rel="noopener noreferrer">
-               @devesh.prajapati_2128
-            </a>
+        <div style="font-size:13px;color:var(--text-muted);">
+          Phone
         </div>
-    </div>
-  </div>
 
-  <div class="contact-info-item">
-    <div class="contact-icon">🐙</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">GitHub</div>
         <div>
-            <a href="https://github.com/dvs2121"
-               target="_blank"
-               rel="noopener noreferrer">
-               github.com/dvs2121
-            </a>
+          <a href="tel:+917348247757">
+            7348247757
+          </a>
         </div>
-    </div>
-  </div>
 
-  <div class="contact-info-item">
-    <div class="contact-icon">📍</div>
-    <div>
-        <div style="font-size:13px;color:var(--text-muted);">Location</div>
-        <div>
-            <a href="https://maps.google.com/?q=Lucknow,Uttar+Pradesh,India"
-               target="_blank"
-               rel="noopener noreferrer">
-               Lucknow, Uttar Pradesh, India
-            </a>
-        </div>
+      </div>
+
     </div>
-  </div>
-    <form class="reveal card" id="contactForm">
-      <div class="form-field"><label>Name</label><input type="text" required id="cf-name"></div>
-      <div class="form-field"><label>Email</label><input type="email" required id="cf-email"></div>
-      <div class="form-field"><label>Subject</label><input type="text" required id="cf-subject"></div>
-      <div class="form-field"><label>Message</label><textarea required id="cf-message"></textarea></div>
-      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
-      <p class="mono" style="font-size:11.5px;color:var(--text-muted);margin-top:10px;">Opens your email client — connect a form backend (e.g. EmailJS) later for in-page sending.</p>
+
+
+    <!-- EMAIL -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        ✉️
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Email
+        </div>
+
+        <div>
+
+          <a href="mailto:deveshpratap7757@gmail.com">
+            deveshpratap7757@gmail.com
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- LINKEDIN -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        💼
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          LinkedIn
+        </div>
+
+        <div>
+
+          <a
+            href="https://www.linkedin.com/in/devesh-prajapati-8b906b25a"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            linkedin.com/in/devesh-prajapati-8b906b25a
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- INSTAGRAM -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        📸
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Instagram
+        </div>
+
+        <div>
+
+          <a
+            href="https://www.instagram.com/devesh.prajapati_2128"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @devesh.prajapati_2128
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- GITHUB -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        🐙
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          GitHub
+        </div>
+
+        <div>
+
+          <a
+            href="https://github.com/dvs2121"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/dvs2121
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CERTIFICATES -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        📜
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Certificates
+        </div>
+
+        <div>
+
+          <a
+            href="https://drive.google.com/drive/folders/162flDRNx4uubC853h2FjRnv_NVHpYInu?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Google Drive Certificates
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- LOCATION -->
+    <div class="contact-info-item">
+
+      <div class="contact-icon">
+        📍
+      </div>
+
+      <div>
+
+        <div style="font-size:13px;color:var(--text-muted);">
+          Location
+        </div>
+
+        <div>
+
+          <a
+            href="https://maps.google.com/?q=Lucknow,Uttar+Pradesh,India"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lucknow, Uttar Pradesh, India
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTACT FORM -->
+    <form
+      class="reveal card"
+      id="contactForm"
+      autocomplete="on"
+    >
+
+      <div class="form-field">
+
+        <label for="cf-name">
+          Name
+        </label>
+
+        <input
+          type="text"
+          required
+          id="cf-name"
+          name="name"
+          autocomplete="name"
+        >
+
+      </div>
+
+
+      <div class="form-field">
+
+        <label for="cf-email">
+          Email
+        </label>
+
+        <input
+          type="email"
+          required
+          id="cf-email"
+          name="email"
+          autocomplete="email"
+        >
+
+      </div>
+
+
+      <div class="form-field">
+
+        <label for="cf-subject">
+          Subject
+        </label>
+
+        <input
+          type="text"
+          required
+          id="cf-subject"
+          name="subject"
+        >
+
+      </div>
+
+
+      <div class="form-field">
+
+        <label for="cf-message">
+          Message
+        </label>
+
+        <textarea
+          required
+          id="cf-message"
+          name="message"
+        ></textarea>
+
+      </div>
+
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="width:100%;justify-content:center;"
+      >
+        Send Message
+      </button>
+
+      <p
+        class="mono"
+        style="
+          font-size:11.5px;
+          color:var(--text-muted);
+          margin-top:10px;
+        "
+      >
+        Opens your email client.
+      </p>
+
     </form>
+
   </div>
+
 </section>
 
+
+<!-- ================= FOOTER ================= -->
 <footer class="container">
+
   <div class="footer-top">
-    <a href="#home" class="logo"><span class="dot"></span>devesh.pratap</a>
+
+    <a href="#home" class="logo">
+      <span class="dot"></span>
+      Devesh.Pratap
+    </a>
+
     <div class="footer-links">
-      <a href="https://github.com/dvs2121" target="_blank">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="mailto:prd247757@gmail.com">Email</a>
-      <a href="tel:7348247757">Phone</a>
-      <a href="#resume">Resume</a>
+
+      <a
+        href="https://github.com/dvs2121"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/devesh-prajapati-8b906b25a"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="https://drive.google.com/drive/folders/162flDRNx4uubC853h2FjRnv_NVHpYInu?usp=drive_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Certificates
+      </a>
+
+      <a href="mailto:deveshpratap7757@gmail.com">
+        Email
+      </a>
+
+      <a href="tel:+917348247757">
+        Phone
+      </a>
+
+      <a href="#resume">
+        Resume
+      </a>
+
     </div>
+
   </div>
+
+
   <div class="footer-bottom">
-    <span>© <span id="year"></span> Devesh Pratap. All rights reserved.</span>
-    <div class="back-top" onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">↑</div>
+
+    <span>
+      ©
+      <span id="year"></span>
+      Devesh Pratap. All rights reserved.
+    </span>
+
+    <button
+      class="back-top"
+      type="button"
+      aria-label="Back to top"
+      onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"
+    >
+      ↑
+    </button>
+
   </div>
+
 </footer>
 
-<script src="script.js"></script>
+
+<!-- JavaScript -->
+<script src="script.js" defer></script>
+
 </body>
 </html>
