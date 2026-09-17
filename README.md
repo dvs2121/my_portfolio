@@ -1,19 +1,10 @@
-# Devesh Pratap — Portfolio
+# Devesh Pratap Portfolio
 
-Plain HTML/CSS/JS, no build step. Three files:
+Plain HTML, CSS and JavaScript with no build step. The portfolio presents Devesh Pratap as an AI/ML Engineer & Data Analyst, with local-first project content for reliable deployment.
 
-- `index.html` — markup
-- `style.css` — all styling (dark/light theme, layout, animations)
-- `script.js` — theme toggle, typing effect, scroll reveals, GitHub API fetch, dashboard modal, counters, contact form
+## Run locally
 
-## Run it locally
-
-Just opening `index.html` in a browser works for most of the site. For the GitHub API calls to run reliably (some browsers restrict `fetch` on `file://` pages), serve it over a local server instead:
-
-
-Then open http://localhost:8000 in your browser.
-
-Node alternative:
+Open `index.html` directly, or serve the folder when testing the optional GitHub profile enrichment:
 
 ```bash
 npx serve .
@@ -21,11 +12,12 @@ npx serve .
 
 ## Deploy
 
-Drag this folder into Vercel, Netlify, or push it to a GitHub repo and enable GitHub Pages — no build command needed, just set the output/root to this folder.
+Deploy the folder to Vercel, Netlify or GitHub Pages. No build command is required.
 
-## Where to edit things
+## Project structure
 
-- Contact info, name, role titles → `index.html` (hero + contact + footer sections)
-- Colors, fonts, spacing → `style.css` (`:root` and `html[data-theme="light"]` at the top)
-- Typed role list, skill percentages, dashboard/ML/cloud card content, GitHub username → `script.js` (look for `roles`, `dashboards`, `mlModels`, `cloudItems`, `GH_USER`)
-- CGPA, certification details → `index.html` (Education and Certifications sections)
+- `index.html` contains the semantic page sections, SEO metadata, resume preview and accessible modal shell.
+- `style.css` contains the dark/light design system, responsive layouts, print styles and reduced-motion support.
+- `script.js` contains local project data, optional GitHub enrichment, filters, project modal behavior, theme switching and navigation.
+
+GitHub API access is optional. Featured projects and fallback repository statistics are stored locally, so rate limits or network failures do not leave a loading or error state visible to visitors.
